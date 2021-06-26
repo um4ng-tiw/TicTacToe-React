@@ -5,16 +5,22 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "npm run clear && parcel build index.html",
-    "clear": "rimraf dist .parcel-cache"
+    "clear": "rimraf dist .parcel-cache",
+    "preinstall": "npx npm-force-resolutions"
   },
   "license": "MIT",
   "dependencies": {
+    "node-sass": "^6.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
   "devDependencies": {
+    "@babel/core": "^7.13.8",
     "babel-preset-nano-react-app": "^0.1.0",
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^1.12.3"
   },
   "babel": {
     "presets": [
